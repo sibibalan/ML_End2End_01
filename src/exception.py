@@ -1,5 +1,5 @@
 import sys
-
+from src.logger import logging
 
 def error_message_detail(error, error_detail:sys):
     _, _, exc_tb = error_detail.exc_info()
@@ -24,5 +24,6 @@ class CustomException(Exception):
 #         a=1/0
 #     except Exception as e:
 #         raise CustomException(e,sys)
+#         logging.info("division by zero")
 
 
